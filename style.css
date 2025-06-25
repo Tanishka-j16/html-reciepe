@@ -1,0 +1,95 @@
+/* Global Reset */
+* {
+  margin:  ;
+  padding: ;
+  box-sizing: border-box;
+}
+
+/* Yummy recipe background */
+body {
+  background: url('https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg') no-repeat center center fixed;
+  /* Replace URL above with a suitable image from Pexels/Unsplash */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Overlay for readability */
+.background-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header & nav */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+nav a {
+  margin: 0 15px;
+  color: #5a2d0c;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #d2691e;
+  text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+h1, h2 {
+  color:brown
+}
+
+/* Button/glow for recipe links */
+.recipe-link {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #f4a460;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.recipe-link::after {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.recipe-link:hover::after {
+  opacity: 1;
+}
